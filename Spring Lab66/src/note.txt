@@ -1,0 +1,1 @@
+Lab66 and 72 were giving exception , it is resolved but check in notes while resolving

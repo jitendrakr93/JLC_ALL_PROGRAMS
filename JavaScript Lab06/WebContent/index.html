@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+function validate(bt) {
+	alert(bt.value);
+	var inp=document.searchForm.uname;
+	
+	if(inp.value.length == 0){
+		var ref1=document.getElementById("unerror");
+		ref1.innerHTML='<h1>Provide username';
+		return false;
+	}
+	var ref=document.getElementById("error");
+	var msg="";
+	alert(ref);
+	
+	if(bt.value=='SAVE'){
+		msg="<font color='red' size='5'>Data Saved";
+	}else if(bt.value=='UPDATE'){
+		msg="<font color='blue' size='5'>Data Updated";
+	}
+	ref.innerHTML=msg;
+}
+</script>
+</head>
+<body>
+<br/>
+<form name='searchForm' action="save.jlc">
+<div id="error"></div>
+<br/>
+<input type="text" name="uname"/><div id="unerror"></div>
+<br/>
+<input type="submit" value="SAVE" onclick="return validate(this);"/>
+<input type="button" value="UPDATE" onclick="validate(this);">
+</form>
+</body>
+</html>

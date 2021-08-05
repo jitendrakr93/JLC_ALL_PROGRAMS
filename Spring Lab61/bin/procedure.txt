@@ -1,0 +1,7 @@
+delimiter $
+create procedure addCustomer(cid int,cnm varchar(12),eml varchar(25),phn long,city varchar(15))
+begin
+insert into customers values(cid,cnm,eml,phn,city);
+end;
+$
+delimiter;

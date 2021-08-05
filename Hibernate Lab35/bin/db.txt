@@ -1,0 +1,20 @@
+CREATE TABLE CUSTOMERS(
+	cid int primary key auto_increment,
+	cname varchar(12),
+	email varchar(55),
+	city varchar(25),
+	cardBal double,
+	cardType varchar(10),
+	cardNo int,
+	status varchar(10));
+	
+	Insert some sample Records:-
+	
+	insert into customers values(101,'Sri','sri@jlc.com','Blore',20000,'VISA',1234,'ACTIVE');
+	insert into customers values(102,'Vas','vas@jlc.com','Blore',30000,'VISA',1235,'ACTIVE');
+	insert into customers values(103,'aa','aa@jlc.com','Blore',10000,'VISA',1236,'ACTIVE');
+	insert into customers values(104,'bb','bb@jlc.com','Delhi',35000,'VISA',1237,'ACTIVE');
+	insert into customers values(105,'cc','cc@jlc.com','Delhi',45000,'MASTER',1238,'ACTIVE');
+	insert into customers values(106,'dd','dd@jlc.com','Hyd',25000,'MASTER',1240,'ACTIVE');
+	insert into customers values(107,'ee','ee@jlc.com','Blore',20000,'VISA',1241,'INACTIVE');
+	insert into customers values(108,'ff','ff@jlc.com','Hyd',25000,'VISA',1234,'ACTIVE');

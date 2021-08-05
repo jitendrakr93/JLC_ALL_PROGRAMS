@@ -1,0 +1,18 @@
+CREATE OR REPLACE PROCEDURE
+getAllJLCContacts(cts_cursor out SYS_REFCURSOR)
+AS
+BEGIN
+OPEN cts_cursor FOR
+SELECT * FROM contacts;
+END;
+/
+
+CREATE OR REPLACE PROCEDURE
+getAllJLCActiveContacts(cts_cursor out SYS_REFCURSOR,st in char)
+AS
+BEGIN
+OPEN cts_cursor FOR
+SELECT * FROM contacts where status=st;
+END;
+/
+

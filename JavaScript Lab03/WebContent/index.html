@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+function validatePhone(inp) {
+	var sp=document.getElementById("phone_error");
+	sp.innerHTML="";
+	var str=inp.value;
+	var a=str.charCodeAt(str.length-1);
+	if(!(a>= 48 && a<=57)){
+		var nVal=str.substr(0,str.length-1);
+		inp.value=nVal;
+	}
+	if(str.length>10){
+		sp.innerHTML="<font color='red'>Only 10 digits allowed</font>";
+	}
+}
+
+function convertToUpper(inp) {
+	var str=inp.value;
+	inp.value=str.toUpperCase();
+}
+</script>
+<input type="text" name="phone" id="phone" onkeyup="validatePhone(this)"/>
+<span id="phone_error"></span>
+<br/>
+<input type="text" name="name" id="name" onkeyup="convertToUpper(this)"/>
+</body>
+</html>

@@ -1,0 +1,4 @@
+create table accounts(accno int primary key, bal double,atype char(2));
+insert into accounts values(101,50000,'SA');
+insert into accounts values(102,35000,'CA');
+insert into accounts values(103,45500,'SA');

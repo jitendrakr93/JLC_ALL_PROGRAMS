@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+function show(inp,spanid) {
+	var msg=document.getElementById(spanid);
+	msg.innerHTML="<font color='red'>Enter Your "+inp.id+"</font>";
+}
+function  hide(spanid) {
+	var msg=document.getElementById(spanid);
+	msg.innerHTML="";
+}
+</script>
+
+<input type="text" id="name" onmouseover="show(this,'namemessage')" onmouseout="hide('namemessage')"/>
+<span id='namemessage'></span>
+<br/>
+<input type="text" id="email" onmouseover="show(this,'emailmessage')" onmouseout="hide('emailmessage')"/>
+<span id='emailmessage'></span>
+
+</body>
+</html>

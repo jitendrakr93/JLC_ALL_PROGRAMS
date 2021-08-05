@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="jlc.js"></script>
+<link href="jlc.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form action="winform">
+<table class="win" width="600" align="center">
+<tr><td colspan="2" align="center">
+<h1 id="showTxt"></h1>
+</td><td>
+<input class="button" type="button" value="Print this page" onclick="printpage()"/>
+</td></tr>
+<tr>
+<td>
+<input class="button" type="button" value="Display an Alert" onclick="openAlert()"/>
+</td><td>
+<input class="button" type="button" value="Display a Confirmation" onclick="openConfirm()"/>
+</td><td>
+<input class="button" type="button" value="Display a Prompt" onclick="openPrompt()"/>
+</td></tr>
+<tr><td>
+<input class="button" type="button" value="Start the count" onclick="restart()"/>
+</td><td>
+<input class="button" type="button" value="Re start the count" onclick="restart()"/>
+</td><td>
+<input class="button" type="button" value="Stop the count" onclick="stop()"/>
+</td></tr>
+<tr><td>
+<input class="button" type="button" value="Open New Window" onclick="openNewWin()"/>
+</td><td>
+<p><input class="button" type="button" value="Close New Window" onclick="closeNewWin()"/>
+</p></td><td>
+<p><input class="button" type="button" value="Close Main Window" onclick="closeMainWin()"/>
+</p></td></tr>
+</table>
+</form>
+
+<form name="clock">
+<table class="clock" width="500" align="center">
+<tr><td><h1>JLC LOCAL TIME</h1></td></tr>
+<tr><td><div id="jlc"></div></td></tr>
+<tr><td><h1><input type="radio" id="1" name="jlctime" checked="checked"/>12 Hours Format</h1><br>
+<h1><input type="radio" id="2" name="jlctime"/>24 Hour Format</h1></td></tr>
+</table>
+</form>
+</body>
+</html>

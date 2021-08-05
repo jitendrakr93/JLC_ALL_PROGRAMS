@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+function f1() {
+	document.getElementById("name").focus();
+}
+function getQualification() {
+	var q=document.getElementById("qualification");
+	var index=q.selectedIndex;
+	var tax=q.options[index].text;
+	var x=document.getElementById("qualiDiv");
+	if(txt=="M.Sc" || txt=="B.Sc"){
+		x.innerHTML="<h1>Enter University<br><input type="text">"
+	}else{
+		x.innerHTML="<h1>Your qualification is "+txt;
+	}
+}
+function getTimings(timings) {
+	var txt="";
+	if(timings=="6.00 P.M - 8.00 P.M){
+		txt="No. of seats: 0";
+		document.getElementById("reg").disabled=true;
+	}
+}
+</script>
+</head>
+</html>

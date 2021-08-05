@@ -1,0 +1,12 @@
+create table contacts(
+contactId NUMBER(6) primary key,
+firstname VARCHAR(10),
+lastname VARCHAR(10),
+email VARCHAR(10),
+phone NUMBER(6),
+dob VARCHAR(10),
+status VARCHAR(10));
+
+CREATE SEQUENCE contactId_seq
+START WITH 101
+INCREMENT BY 1;

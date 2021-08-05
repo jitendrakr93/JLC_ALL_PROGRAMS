@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.jlcindia.hibernate">
+	<class name="Student" table="students">
+		<composite-id name="studentId" class="SID">
+			<key-property name="bid" column="bid" type="string" />
+			<key-property name="sid" column="sid" type="string" />
+		</composite-id>
+		<property name="sname" />
+		<property name="email" />
+		<property name="phone" />
+	</class>
+</hibernate-mapping>

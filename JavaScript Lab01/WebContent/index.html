@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+function change() {
+	var btn=document.getElementById("mybutton");
+	btn.value="DISPLAY";
+}
+function resetValue() {
+	var btn=document.getElementById("mybutton");
+	btn.value="SHOW";
+}
+</script>
+<input type="button" id="mybutton" value="SHOW" onmouseover="change()" onmouseout="resetValue()"/>
+</body>
+</html>
